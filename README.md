@@ -1,2 +1,2 @@
 # ExerciseJava
-Java exercises and practicals
+My Java Tutor and practicals in Java language. 
