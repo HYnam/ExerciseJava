@@ -19,13 +19,19 @@ public class Aquarium<T extends Fish> {
     }
 
     // implement the remaining methods here
-    public void addFish(T Fish){
-        if (this.fish instanceof Betta){
+    public void addFish(T toBeAdded){
+        Boolean bettaInside = false;
 
-        } else if (this.fish.contains(Betta) instanceof Betta){
+        for (T currentFish : fish){
+            if (currentFish instanceof Betta){
+                bettaInside = true;
+            }
+        }
 
-        } else {
-            fish.add(Fish);
+        if (fish.size() > 0 && !(toBeAdded instanceof Betta) && bettaInside == false){
+            fish.add(toBeAdded);
+        } else if (fish.size() == 0) {
+            fish.add(toBeAdded);
         }
     }
 
