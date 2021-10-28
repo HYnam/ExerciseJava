@@ -42,5 +42,12 @@ public class Point {
         return new Point(x * -1, y * -1);
     }
 
+    @Override
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
 
+    public static void main(String[] args) {
+        System.out.println(new Point(2, -3).toString());
+    }
 }
