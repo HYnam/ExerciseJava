@@ -43,4 +43,13 @@ public class Line {
         end.movePoint(deltaX, deltaY);
         length = lineLength(start, end);
     }
+
+    public Point middle() {
+        return new Point((start.getX() + end.getX()) / 2,
+                (start.getY() + end.getY()) / 2);
+    }
+
+    public Line flipLine() {
+        return new Line(start.flipPoint(), end.flipPoint());
+    }
 }
