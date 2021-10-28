@@ -33,4 +33,14 @@ public class Point {
 
         // return new Point(this.x + deltaX, this.y + deltaY);
     }
+
+    public Line createLine(Point end) {
+        return new Line(this, end);
+    }
+
+    public Point flipPoint() {
+        return new Point(x * -1, y * -1);
+    }
+
+
 }
