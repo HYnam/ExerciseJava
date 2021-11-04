@@ -52,4 +52,9 @@ public class Line {
     public Line flipLine() {
         return new Line(start.flipPoint(), end.flipPoint());
     }
+
+    public String toString() {
+        return start.toString() + " " + end.toString() + " " +
+                this.getLength();
+    }
 }
