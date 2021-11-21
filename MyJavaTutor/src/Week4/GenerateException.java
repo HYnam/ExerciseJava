@@ -14,4 +14,16 @@ public class GenerateException {
                 break;
         }
     }
+
+    public static void generateExceptionUsingIf(String exceptionType) {
+        if (exceptionType.equals("arithmetic")) {
+            throw new ArithmeticException();
+        } else if (exceptionType.equals("index")) {
+            throw new IndexOutOfBoundsException();
+        } else if (exceptionType.equals("null")) {
+            throw new NullPointerException();
+        } else {
+
+        }
+    }
 }
